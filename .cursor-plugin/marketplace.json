@@ -1,0 +1,16 @@
+{
+  "name": "people-analytics-demo",
+  "owner": {
+    "name": "Upscale Analytics"
+  },
+  "metadata": {
+    "description": "Demo marketplace for the workshop: People Analytics plugins."
+  },
+  "plugins": [
+    {
+      "name": "people-analytics-starter",
+      "source": "people-analytics-starter",
+      "description": "One rule and one skill for People Analytics work."
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+---
+description: Use when answering People Analytics questions (headcount, hires, terminations, attrition, tenure).
+alwaysApply: false
+---
+
+# Semantic layer first
+
+- Take People Analytics metrics from the semantic layer. Never recompute them from raw tables.
+- If a metric is not in the layer, say so and stop before writing your own definition.
+- Always state the as-of date of the number you report.
