@@ -21,7 +21,13 @@ This folder is a **marketplace** (`.cursor-plugin/marketplace.json`) that lists 
 only indexes it - nothing is installed yet. Then open **Browse**, find `people-analytics-demo`,
 and install **People Analytics Starter**.
 
-**B. As a local plugin.** `bash session-2/demos/plugins/install.sh`, then `Developer: Reload Window`.
+The folder must be a **git repository with at least one commit**. Cursor resolves the plugin
+at `HEAD` and copies that commit to `~/.cursor/plugins/cache/people-analytics-demo/<plugin>/<commit>/`.
+Without a commit it logs "Failed to resolve version for plugin people-analytics-starter@HEAD,
+skipping plugin" and the skill never appears. It follows that **uncommitted edits are not
+loaded** - commit first.
+
+**B. As a local plugin.** `bash demos/data-team-marketplace/install.sh`, then `Developer: Reload Window`.
 Cursor loads local plugins only from `~/.cursor/plugins/local/` and skips symlinks that point
 outside it, so the script copies. Run it again after every edit.
 
